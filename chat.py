@@ -39,7 +39,7 @@ class ConversationMemory:
 
 
 class CustomerSupportAssistant:
-  def __init__(self):
+    def __init__(self):
         self.memory = ConversationMemory(max_turns=5)
         self.kb = KnowledgeBase()
         self.classifier = IntentClassifier()
@@ -49,12 +49,13 @@ class CustomerSupportAssistant:
 
         if not api_key:
             raise ValueError(
+                "OpenAI API key not found. Set OPENAI_API_KEY in your .env file."
             )
         self.llm = ChatOpenAI(
             model=model_name,
             api_key=api_key,
             temperature=0.7,
-            max_tokens=300,
+            model_kwargs={"max_tokens":20},
         )
         self.response_chain = SUPPORT_RESPONSE_PROMPT | self.llm | StrOutputParser()
         self.fallback_chain = FALLBACK_PROMPT | self.llm | StrOutputParser()

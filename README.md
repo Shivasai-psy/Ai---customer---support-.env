@@ -93,9 +93,7 @@ python chat.py
 ## 💬 Sample Output
 
 ```
-👤 Customer: What's your return policy?
-   [Detected Intent: Returns & Refunds]
-🤖 Assistant: We offer a 30-day return policy for unused items in original packaging...
+ <img width="900" height="760" alt="image" src="https://github.com/user-attachments/assets/71f0cb6a-c2cb-40de-87f1-d9fde765f254" />
 
 ```
 

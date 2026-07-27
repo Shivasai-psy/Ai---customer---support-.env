@@ -29,14 +29,22 @@ An AI-powered Customer Support Assistant built using **Python**, **LangChain**, 
 ```
 AI-Customer-Support-Assistant/
 │
-├── chat.py
-├── intent_classifier.py
-├── knowledge_base.py
-├── prompts.py
-├── .env.example
-├── .gitignore
+├── app.py                  
+├── chat.py                 
+├── intent_classifier.py    
+├── knowledge_base.py        
+├── prompts.py               
 ├── requirements.txt
-└── README.md
+├── .env.example             
+├── .gitignore
+├── README.md
+│
+├── templates/
+│   └── index.html           
+│
+└── static/
+    ├── style.css             
+    └── script.js             
 ```
 
 ---

@@ -1,41 +1,36 @@
-# Ai-customer-support
-# 🤖 AI Customer Support Assistant
+# AI Customer Support Assistant
 
-A modular, conversational AI assistant built with **Python** and **LangChain** that understands customer queries, classifies intent, retrieves relevant knowledge, and generates helpful responses using an LLM.
+An intelligent customer support assistant built with Python, LangChain, and OpenAI's GPT models. This application classifies customer queries, retrieves relevant information from a knowledge base, and generates personalized responses to provide effective customer support.
 
----
+## Features
 
-## ✨ Features
+- **Intent Classification**: Automatically detects customer intent (Product Inquiry, Order Status, Returns & Refunds, Technical Support, General Query)
+- **Knowledge Base Integration**: Predefined knowledge base with relevant information for each intent category
+- **LLM-Powered Responses**: Generates clear, contextual, and empathetic responses using OpenAI's GPT models
+- **Conversation Memory**: Maintains conversation context for better understanding and follow-ups
+- **Error Handling**: Gracefully handles API errors, invalid inputs, and network issues
+- **Clean Architecture**: Modular code structure for easy maintenance and extension
+- **Secure API Key Management**: Environment variables for sensitive information
+- **Colorful CLI Interface**: Enhanced user experience with color-coded responses
 
-- **Intent Classification** — Automatically categorizes queries into:
-  - Product Inquiry
-  - Order Status
-  - Returns & Refunds
-  - Technical Support
-  - General Query
-- **Knowledge Retrieval** — Fetches relevant context from a predefined knowledge base
-- **Conversational Memory** — Maintains context across multi-turn conversations
-- **Graceful Error Handling** — Handles API failures, network issues, and empty input
-- **Modular Architecture** — Clean separation of concerns across files
-- **Secure API Key Management** — Uses `.env` file (never hardcoded)
+## Technologies Used
 
----
+- **Python 3.8+**: Core programming language
+- **LangChain**: Framework for LLM application development
+- **OpenAI GPT-3.5-turbo**: Language model for intent classification and response generation
+- **python-dotenv**: Environment variable management
+- **colorama**: Terminal color formatting for better UX
 
-## 🛠 Technologies Used
+## Installation
 
-| Technology | Purpose |
-|------------|---------|
-| Python 3.9+ | Core language |
-| LangChain | LLM orchestration & prompt management |
-| OpenAI API | LLM provider (GPT-4o-mini) |
-| python-dotenv | Environment variable management |
+### Prerequisites
 
----
+- Python 3.8 or higher
+- OpenAI API key (or equivalent LLM API key)
 
-## 📦 Installation
+### Steps
 
-### 1. Clone or create the project directory
-
+1. Clone the repository:
 ```bash
-mkdir ai-customer-support
-cd ai-customer-support
+git clone https://github.com/yourusername/ai-customer-support-assistant.git
+cd ai-customer-support-assistant

@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 INTENT_CLASSIFICATION_PROMPT = PromptTemplate.from_template(
     """You are an intent classifier for a customer support system.

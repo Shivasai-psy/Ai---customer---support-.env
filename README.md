@@ -77,14 +77,6 @@ pip install -r requirements.txt
 
 Create a `.env` file in the project folder.
 
-For Gemini:
-
-```env
-GOOGLE_API_KEY=your_api_key_here
-```
-
-For OpenAI:
-
 ```env
 OPENAI_API_KEY=your_api_key_here
 ```
@@ -112,10 +104,12 @@ python chat.py
 ## 📦 Requirements
 
 ```
+flask
 langchain
-langchain-google-genai
-google-generativeai
+langchain-core
+langchain-openai
 python-dotenv
+openai
 ```
 
 Install using:

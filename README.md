@@ -1,46 +1,147 @@
-# AI Customer Support Assistant
+# 🤖 AI Customer Support Assistant
 
-An intelligent customer support assistant built with Python, LangChain, and OpenAI's GPT models. This application classifies customer queries, retrieves relevant information from a knowledge base, and generates personalized responses to provide effective customer support.
+An AI-powered Customer Support Assistant built using **Python**, **LangChain**, and **Google Gemini/OpenAI API**. The chatbot understands customer queries, identifies the user's intent, retrieves information from a predefined knowledge base, and generates accurate responses while maintaining a natural conversation.
 
-## Features
+---
 
-- **Intent Classification**: Automatically detects customer intent (Product Inquiry, Order Status, Returns & Refunds, Technical Support, General Query)
-- **Knowledge Base Integration**: Predefined knowledge base with relevant information for each intent category
-- **LLM-Powered Responses**: Generates clear, contextual, and empathetic responses using OpenAI's GPT models
-- **Conversation Memory**: Maintains conversation context for better understanding and follow-ups
-- **Error Handling**: Gracefully handles API errors, invalid inputs, and network issues
-- **Clean Architecture**: Modular code structure for easy maintenance and extension
-- **Secure API Key Management**: Environment variables for sensitive information
-- **Colorful CLI Interface**: Enhanced user experience with color-coded responses
+## 📌 Features
 
-## Technologies Used
+- AI-powered conversational chatbot
+- Intent classification
+- Product Inquiry support
+- Order Status assistance
+- Returns & Refunds support
+- Technical Support assistance
+  
+---
 
-- **Python**
-- **LangChain**
-- **OpenAI API**
-- **python-dotenv**
+## 🛠 Technologies Used
 
-## Installation
+- Python
+- LangChain
+- Google Gemini API / OpenAI API
+- python-dotenv
 
-### Prerequisites
+---
 
-- Python 
-- OpenAI API key (or equivalent LLM API key)
+## 📂 Project Structure
 
-### Steps
+```
+AI-Customer-Support-Assistant/
+│
+├── chat.py
+├── intent_classifier.py
+├── knowledge_base.py
+├── prompts.py
+├── .env.example
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
 
-1. Clone the repository:
-git clone https://github.com/yourusername/ai-customer-support-assistant.git
-cd ai-customer-support-assistant
+---
 
-2. create a virtual environment:
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```
+git clone https://github.com/your-username/AI-Customer-Support-Assistant.git
+cd AI-Customer-Support-Assistant
+```
+
+### 2. Create Virtual Environment
+
+```
 python -m venv venv
 venv\Scripts\activate
+```
 
-3.install dependencies:
+### 3. Install Dependencies
+
+```
 pip install -r requirements.txt
+```
 
-4.configure API key:
-OPENAI_API_KEY=sk-your-actual-api-key-here
-LLM_MODEL=gpt-4o-mini
+---
 
+## 🔑 Configure API Key
+
+Create a `.env` file in the project folder.
+
+For Gemini:
+
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+For OpenAI:
+
+```env
+OPENAI_API_KEY=your_api_key_here
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python chat.py
+```
+---
+
+## 💬 Sample Output
+
+```
+
+```
+
+---
+
+## 📦 Requirements
+
+```
+langchain
+langchain-google-genai
+google-generativeai
+python-dotenv
+```
+
+Install using:
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+## 📄 .gitignore
+
+```
+venv/
+.env
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+```
+
+---
+
+## 📄 .env.example
+
+```
+GOOGLE_API_KEY=your_api_key_here
+```
+---
+
+## 🔮 Future Improvements
+
+- Voice support
+- Web interface (Flask/Streamlit)
+- Database integration
+- Multi-language support
+- RAG with Vector Database
+- Customer authentication
+
+---

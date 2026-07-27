@@ -93,7 +93,7 @@ python chat.py
 ## 💬 Sample Output
 
 ```
-<img width="900" height="760" alt="image" src="https://github.com/user-attachments/assets/ab51947c-939e-444d-8662-e02ea2d87b86" />
+<img width="900" height="452" alt="image" src="https://github.com/user-attachments/assets/18b99a23-0646-4c0a-8128-8e1bfc29c4a4" />
 
 ```
 

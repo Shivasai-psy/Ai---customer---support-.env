@@ -27,7 +27,7 @@ class IntentClassifier:
             model=self.model_name,
             api_key=self.api_key,
             temperature=0.0,  
-            max_tokens=20,
+            model_kwargs={"max_tokens":20},
         )
         self.chain = INTENT_CLASSIFICATION_PROMPT | self.llm | StrOutputParser()
 
@@ -41,7 +41,7 @@ class IntentClassifier:
             for valid_intent in self.VALID_INTENTS:
                 if valid_intent.lower() in intent.lower():
                     return valid_intent
-                  return "General Query"
+            return "General Query"
 
         except Exception as e:
             print(f"[IntentClassifier] Error during classification: {e}")

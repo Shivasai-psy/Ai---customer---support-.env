@@ -94,7 +94,6 @@ python chat.py
 
 ```
 <img width="900" height="452" alt="image" src="https://github.com/user-attachments/assets/0ebf61bd-f9e0-4b30-b044-1d6af0e96df3" />
-
 ```
 
 ---

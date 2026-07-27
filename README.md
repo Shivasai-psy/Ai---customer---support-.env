@@ -123,27 +123,6 @@ Install using:
 ```
 pip install -r requirements.txt
 ```
-
----
-
-## 📄 .gitignore
-
-```
-venv/
-.env
-__pycache__/
-*.pyc
-.vscode/
-.idea/
-```
-
----
-
-## 📄 .env.example
-
-```
-GOOGLE_API_KEY=your_api_key_here
-```
 ---
 
 ## 🔮 Future Improvements

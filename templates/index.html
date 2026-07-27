@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Customer Support</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat-card">
+    <div class="chat-header">
+      <h1>🤖 AI Customer Support</h1>
+      <p>Ask about orders, returns, products or technical issues</p>
+    </div>
+
+    <div class="chat-window" id="chat-window">
+      {% if init_error %}
+        <div class="bubble bot error">⚠️ Setup error: {{ init_error }}</div>
+      {% else %}
+        <div class="bubble bot">Hi! I'm your support assistant. How can I help you today?</div>
+      {% endif %}
+    </div>
+
+    <form id="chat-form" class="chat-input-row">
+      <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="submit">Send</button>
+      <button type="button" id="clear-btn" title="Clear conversation">Clear</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

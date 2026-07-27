@@ -15,22 +15,38 @@ An intelligent customer support assistant built with Python, LangChain, and Open
 
 ## Technologies Used
 
-- **Python 3.8+**: Core programming language
-- **LangChain**: Framework for LLM application development
-- **OpenAI GPT-3.5-turbo**: Language model for intent classification and response generation
-- **python-dotenv**: Environment variable management
-- **colorama**: Terminal color formatting for better UX
+- **Python**
+- **LangChain**
+- **OpenAI API**
+- **python-dotenv**
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 
 - OpenAI API key (or equivalent LLM API key)
 
 ### Steps
 
 1. Clone the repository:
-```bash
+---
 git clone https://github.com/yourusername/ai-customer-support-assistant.git
 cd ai-customer-support-assistant
+---
+2. create a virtual environment:
+---
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+---
+3.install dependencies:
+---
+pip install -r requirements.txt
+---
+4.configure API key:
+---
+OPENAI_API_KEY=sk-your-actual-api-key-here
+LLM_MODEL=gpt-4o-mini
+---

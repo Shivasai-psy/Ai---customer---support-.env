@@ -30,23 +30,17 @@ An intelligent customer support assistant built with Python, LangChain, and Open
 ### Steps
 
 1. Clone the repository:
----
 git clone https://github.com/yourusername/ai-customer-support-assistant.git
 cd ai-customer-support-assistant
----
-2. create a virtual environment:
----
-python -m venv venv
 
-# On Windows:
+2. create a virtual environment:
+python -m venv venv
 venv\Scripts\activate
----
+
 3.install dependencies:
----
 pip install -r requirements.txt
----
+
 4.configure API key:
----
 OPENAI_API_KEY=sk-your-actual-api-key-here
 LLM_MODEL=gpt-4o-mini
----
+
